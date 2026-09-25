@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetraNexAI | DR Screening</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand"><span class="brand-mark">N</span> NetraNexAI</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#screening">Screening</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">EXPLAINABLE AI • RURAL SCREENING</p>
+        <h1>Early diabetic retinopathy screening with <span>clear AI explanations.</span></h1>
+        <p class="lead">
+          Upload a fundus image to explore the NetraNexAI prototype workflow,
+          including severity, risk and an explainability view.
+        </p>
+        <a class="button" href="#screening">Start Screening</a>
+      </div>
+      <div class="hero-card">
+        <div class="eye-icon">◉</div>
+        <h3>Patient → AI → Explanation</h3>
+        <p>Designed for simple, low-bandwidth screening workflows.</p>
+      </div>
+    </section>
+
+    <section id="screening" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">SCREENING</p>
+        <h2>Upload Fundus Image</h2>
+        <p>JPG or PNG image. This demo does not provide a medical diagnosis.</p>
+      </div>
+
+      <div class="screen-grid">
+        <div class="upload-card">
+          <label class="dropzone" for="imageInput">
+            <div class="upload-icon">↑</div>
+            <strong>Choose a fundus image</strong>
+            <span>Click here to select JPG/PNG</span>
+          </label>
+          <input id="imageInput" type="file" accept="image/png,image/jpeg" hidden>
+          <img id="preview" class="preview hidden" alt="Fundus preview">
+          <button id="screenBtn" class="button full" disabled>Run Demo Screening</button>
+          <p id="status" class="status"></p>
+        </div>
+
+        <div id="resultCard" class="result-card">
+          <p class="eyebrow">RESULT</p>
+          <h3 id="severity">Waiting for image</h3>
+          <div class="risk-row">
+            <span>Risk level</span>
+            <strong id="risk">—</strong>
+          </div>
+          <div class="metric">
+            <span>Demo confidence</span>
+            <div class="bar"><i id="confidenceBar"></i></div>
+            <b id="confidence">—</b>
+          </div>
+          <div class="explain">
+            <strong>AI explanation</strong>
+            <p id="explanation">Upload an image to see the prototype result.</p>
+          </div>
+          <div class="recommendation">
+            <strong>Next step</strong>
+            <p id="recommendation">—</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <p class="eyebrow">ABOUT NETRANEXAI</p>
+      <h2>From image capture to explainable risk triage</h2>
+      <div class="flow">
+        <span>Patient</span><b>→</b><span>Fundus Image</span><b>→</b>
+        <span>AI Classification</span><b>→</b><span>XAI</span><b>→</b>
+        <span>Risk</span><b>→</b><span>Referral</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>NetraNexAI • Prototype for educational and hackathon use</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
