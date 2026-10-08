@@ -4,6 +4,20 @@ Explainable AI prototype for Diabetic Retinopathy Screening in Rural India.
 
 > **Important:** This repository is a demonstration/prototype. The included prediction service is a mock/demo classifier and must not be used for medical diagnosis or clinical decisions.
 
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Run locally](#run-locally)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
+- [Project structure](#project-structure)
+- [Replacing the demo model](#replacing-the-demo-model)
+- [GitHub](#github)
+
+---
+
 ## Features
 - Fundus image upload
 - Image preview
@@ -56,6 +70,6 @@ git init
 git add .
 git commit -m "Initial commit - NetraNexAI"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/NetraNexAI.git
+git remote add origin https://github.com/spjayesh2005-ui/NetraNex.git
 git push -u origin main
 ```
